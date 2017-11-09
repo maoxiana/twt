@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let header = MJRefreshNormalHeader()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "新闻"
         // 加载数据
         loadDataSourse()
         //加载TableView
@@ -32,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         headLabel.textColor = UIColor.gray
         headLabel.numberOfLines = 0
         headLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
-        headLabel.text = "  天外天新闻"
+        headLabel.text = "  天外天"
         headLabel.font = UIFont.italicSystemFont(ofSize:15)
         self.tableView?.tableHeaderView = headLabel
         headLabel.snp.makeConstraints { (make) -> Void in
